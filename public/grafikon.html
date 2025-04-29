@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grafikon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Statistika filmova po žanru</h1>
+  </header>
+
+  <nav aria-labelledby="primarna-navigacija">
+    <h2 id="primarna-navigacija" class="visually-hidden">Primarna navigacija</h2>
+    <ul class="nav-menu">
+      <li><a href="index.html">Početna</a></li>
+      <li><a href="slike.html">Galerija</a></li>
+      <li><a href="grafikon.html">Grafikon</a></li>
+    </ul>
+  </nav>
+
+  <main class="content">
+    <h2>Broj filmova po žanru</h2>
+    <div class="pie-wrapper">
+      <div class="pie-chart" role="img" aria-label="Grafikon prikazuje omjer žanrova: Komedija, Drama, Akcija, Triler">
+      </div>
+      <div class="legend">
+        <div><span class="color comedy"></span> Komedija</div>
+        <div><span class="color drama"></span> Drama</div>
+        <div><span class="color akcija"></span> Akcija</div>
+        <div><span class="color triler"></span> Triler</div>
+      </div>
+    </div>
+
+    <div class="bar-chart" aria-label="Histogram žanrova filmova">
+      <div class="bar" style="--bar-height: 70%;" aria-label="Komedija: 7 filmova">Komedija</div>
+      <div class="bar" style="--bar-height: 60%;" aria-label="Drama: 6 filmova">Drama</div>
+      <div class="bar" style="--bar-height: 40%;" aria-label="Akcija: 3 filma">Akcija</div>
+      <div class="bar" style="--bar-height: 20%;" aria-label="Triler: 2 filma">Triler</div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025. Web Programiranje. Sva prava pridržana.</p>
+  </footer>
+</body>
+</html>
